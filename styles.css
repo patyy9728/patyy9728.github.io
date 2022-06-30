@@ -1,0 +1,45 @@
+
+.genero{
+    width: auto;
+    background-color:#000;
+    color: #fff;
+    border: none;
+}
+.genero:hover{
+border-bottom: solid 1px purple;
+}
+.card-front{
+    position: relative;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-weight: bold;
+}
+.card-front:hover{
+    visibility: hidden;
+    
+}
+
+.card-back{
+    overflow: auto;
+    position: absolute; 
+    background-color: purple;
+    color: #fff;
+    
+}
+
+.card-back::-webkit-scrollbar{
+    visibility: hidden;
+}
+.paginacion{
+  display: flex;
+  justify-content: center;
+  border: none; 
+  background-color: purple; 
+  padding: 5px; 
+  color: #fff; 
+  margin: 0px 10px;
+}
+.paginacion:active{
+    border: solid 1px #fff;
+    background-color: rgb(53, 6, 53);
+}

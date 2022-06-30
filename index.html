@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>DEV.F Movies</title>
+</head>
+<body style="background:#000">
+  <header>
+    <nav class="navbar bg-black">
+        <div class="container-fluid">
+          <div class="row">
+          <a class="navbar-brand" href="index.html"><span style="background-color: purple; padding: 5px; color:#fff;">DEV.F</span><span style="background-color: gainsboro; padding: 3px;">Movies</span></a>        
+           <div class="collapse navbar-collapse" id="navbarNav">
+          </div>
+        </div>
+    <form class="d-flex" role="search" id="searchmovie">
+      <input autocomplete="off" class="form-control me-2" id="buscador"type="search" placeholder="Buscar pelicula" aria-label="Search">
+      <button class="btn text-white" type="submit" style="background-color:purple;">Buscar</button>
+      <button class="btn text-white" id="reset" style="background-color: purple; margin:0px 5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
+        <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
+      </svg></button>
+      </form>
+  </div>
+</div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="row mt-3 d-flex justify-content-center generoslist">
+        <button  class="genero" id="accion" style="width: auto;">Acción</button>
+        <button  class="genero" id="aventura" style="width: auto;">Aventura</button>
+        <button  class="genero" id="animación" style="width: auto;">Animación</button>
+        <button  class="genero" id="comedia" style="width: auto;">Comedia</button>
+        <button  class="genero" id="crimen" style="width: auto;">Crimen</button>
+        <button  class="genero" id="documental" style="width: auto;">Documental</button>
+        <button  class="genero" id="drama" style="width: auto;">Drama</button>
+        <button  class="genero" id="familia" style="width: auto;">Familia</button>
+        <button  class="genero" id="fantasia" style="width: auto;">Fantasia</button>
+        <button  class="genero" id="historia" style="width: auto;">Historia</button>
+        <button  class="genero" id="terror" style="width: auto;">Terror</button>
+        <button  class="genero" id="musica" style="width: auto;">Música</button>
+        <button  class="genero" id="misterio" style="width: auto;">Misterio</button>
+        <button  class="genero" id="romance" style="width: auto;">Romance</button>
+        <button  class="genero" id="ciencia" style="width: auto;">Ciencia Ficcion</button>
+        <button  class="genero" id="tv" style="width: auto;">Peliculas de TV</button>
+        <button  class="genero" id="suspenso" style="width: auto;">Suspenso</button>
+        <button  class="genero" id="guerra" style="width: auto;">Guerra</button>
+      </div>
+    <div class="row" id="contenidopag">
+    </div>
+    <div class="row d-flex justify-content-center mt-5">
+      <button id="anterior" type="button" class="paginacion" style="width: 100px;">Anterior</button>
+      <button id="siguiente" type="button" class="paginacion" style="width: 100px;" >Siguiente</button>
+    </div>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
